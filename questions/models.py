@@ -6,7 +6,7 @@ class Question(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     content = models.CharField(max_length=255)
     slug = models.CharField(max_length=255, unique=True)
-    author = models.CharField(settings.AUT_USER_MODEL,
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,
                             on_delete=models.CASCADE,
                             related_name="questions")
 
