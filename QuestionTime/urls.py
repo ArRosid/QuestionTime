@@ -38,6 +38,10 @@ urlpatterns = [
     path('accounts/',
         include("django_registration.backends.one_step.urls")),
 
+    # users api
+    path('api/',
+        include('users.api.urls')),
+
     # Login via browsable API
     path('api-auth/',
         include("rest_framework.urls")),
