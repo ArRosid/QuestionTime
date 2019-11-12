@@ -42,6 +42,10 @@ urlpatterns = [
     path('api/',
         include('users.api.urls')),
 
+    # Questions & Answer api
+    path('api/',
+        include('questions.api.urls')),
+
     # Login via browsable API
     path('api-auth/',
         include("rest_framework.urls")),
