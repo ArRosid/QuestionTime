@@ -59,5 +59,6 @@ urlpatterns = [
     path('api/rest-auth/registration/',
         include('rest_auth.registration.urls')),
 
-    path('api/v1/docs', include_docs_urls(title="QuestionTime API"))
+    path('api/v1/docs', include_docs_urls(title="QuestionTime API",
+                                        permission_classes=()))
 ]
