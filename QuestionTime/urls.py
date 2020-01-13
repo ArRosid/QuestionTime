@@ -19,6 +19,7 @@ from django.urls import include, path
 from django_registration.backends.one_step.views import RegistrationView
 
 from users.forms import CustomUserForm
+from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -56,5 +57,7 @@ urlpatterns = [
     
     # Registration via rest
     path('api/rest-auth/registration/',
-        include('rest_auth.registration.urls'))
+        include('rest_auth.registration.urls')),
+
+    path('api/v1/docs', include_docs_urls(title="QuestionTime API"))
 ]
