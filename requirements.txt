@@ -10,7 +10,7 @@ django-crispy-forms==1.8.0
 django-registration==3.0.1
 django-rest-auth==0.9.5
 django-rest-swagger==2.2.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 idna==2.8
 itypes==1.1.0
 Jinja2==2.10.3
